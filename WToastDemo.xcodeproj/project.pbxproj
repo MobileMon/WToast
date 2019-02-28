@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78547475222868F200D1C574 /* UIApplication+RSKSharedApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 78547473222868F100D1C574 /* UIApplication+RSKSharedApplication.m */; };
 		AF0C68741885D1F2000E4147 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0C686C1885D1F2000E4147 /* main.m */; };
 		AF0C68751885D1F2000E4147 /* WAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0C686E1885D1F2000E4147 /* WAppDelegate.m */; };
 		AF0C68761885D1F2000E4147 /* WTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0C68701885D1F2000E4147 /* WTestViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78547473222868F100D1C574 /* UIApplication+RSKSharedApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+RSKSharedApplication.m"; sourceTree = "<group>"; };
+		78547474222868F200D1C574 /* UIApplication+RSKSharedApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+RSKSharedApplication.h"; sourceTree = "<group>"; };
 		AF0C68341885C946000E4147 /* WToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0C686C1885D1F2000E4147 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF0C686D1885D1F2000E4147 /* WAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 		AF0C687D1885D250000E4147 /* WToast */ = {
 			isa = PBXGroup;
 			children = (
+				78547474222868F200D1C574 /* UIApplication+RSKSharedApplication.h */,
+				78547473222868F100D1C574 /* UIApplication+RSKSharedApplication.m */,
 				AF0C687E1885D250000E4147 /* WToast.h */,
 				AF0C687F1885D250000E4147 /* WToast.m */,
 			);
@@ -216,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0C68751885D1F2000E4147 /* WAppDelegate.m in Sources */,
+				78547475222868F200D1C574 /* UIApplication+RSKSharedApplication.m in Sources */,
 				AF0C68801885D250000E4147 /* WToast.m in Sources */,
 				AF0C68741885D1F2000E4147 /* main.m in Sources */,
 				AF0C68761885D1F2000E4147 /* WTestViewController.m in Sources */,

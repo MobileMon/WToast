@@ -10,6 +10,7 @@
 //
 
 #import "WToast.h"
+#import "UIApplication+RSKSharedApplication.h"
 
 #if !__has_feature(objc_arc)
 #error WToast requires ARC
@@ -159,13 +160,22 @@
 }
 
 - (void)__flipViewAccordingToStatusBarOrientation {
+    
+    UIApplication *application = [UIApplication rsk_sharedApplication];
+    if (application) {
+    }
+    else{
+        return;
+    }
+    
+    
 	CGSize screenSize = [UIScreen mainScreen].bounds.size;
 	CGFloat x = floor((screenSize.width - self.bounds.size.width) / 2.0);
 	CGFloat y;
 	
 	switch (self.gravity) {
 		case kWTGravityTop: {
-			y = MIN([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication sharedApplication].statusBarFrame.size.height) + 15.0;
+			y = MIN(application.statusBarFrame.size.width, application.statusBarFrame.size.height) + 15.0;
 			break;
 		}
 		case kWTGravityMiddle: {
@@ -351,7 +361,13 @@
 }
 
 + (UIWindow *)mainWindow {
-	return [[UIApplication sharedApplication] keyWindow];
+    
+    UIApplication *application = [UIApplication rsk_sharedApplication];
+    if (application) {
+        return [application keyWindow];
+    }
+    
+    return nil;
 }
 
 @end
